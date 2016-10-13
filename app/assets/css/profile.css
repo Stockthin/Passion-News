@@ -1,0 +1,546 @@
+.clr {
+    clear: both;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background:#bcd9d7;
+  min-height:200px;
+  /*background: #eb6559;*/
+}
+li{
+list-style-type:none;
+}
+.wrapper{
+  
+}
+/*HEADER*/
+.wrapper #header .item_menu{
+padding-left:0px;
+padding-right:0px;
+}
+.wrapper #header .top_header{
+margin-top:10px;
+margin-bottom:10px;
+}
+.wrapper #header .top_header .navbar{
+background:none;
+border:none;
+}
+.wrapper #header .top_header .btn{
+  width:45px; 
+  height:25;
+  border:none;
+  
+}
+.wrapper #header .top_header .btn-default:hover{
+background:none;
+
+}
+.wrapper #header .top_header  img:hover{
+/*opacity: 0.4;
+border:1px solid;*/
+}
+.wrapper #header .top_header a{
+  
+}
+.wrapper #header .top_header .login i{
+  width: 21px;
+    height: 21px;
+    background: url(/Passion-News/app/assets/img/login/login.png) no-repeat;
+    background-position: 1px 1px;
+    display: inline-block;
+    background-size: 18px;
+    float:left;
+    margin-right: 7px;
+}
+.wrapper #header .top_header .logout i{
+  width: 21px;
+    height: 21px;
+    background: url(/Passion-News/app/assets/img/login/logout.png) no-repeat;
+    background-position: 1px 1px;
+    display: inline-block;
+    background-size: 18px;
+    float:left;
+    margin-right: 7px;
+}
+
+.wrapper #header .main_header a{
+      font-size: 12px;
+    line-height: 25px;
+}
+.wrapper #header .main_header .main_content ul li{
+  /*float:left;
+  margin-left:35px;*/
+}
+
+/*Style cho menu  */
+.menuBackground {
+  background: brown;
+  text-align: center;
+}
+.dropDownMenu a {
+  color: #FFF;
+}
+
+.dropDownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropDownMenu li {
+  position: relative;
+}
+.dropDownMenu a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.dropDownMenu a:hover {
+  background: #000;
+}
+
+
+/* Level 1 Drop Down */
+.dropDownMenu > li {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px; /* solve the 4 pixels spacing between list-items */
+}
+.dropDownMenu > li:first-child {
+  margin-left: 0;
+}
+/* Level 2 */
+.dropDownMenu ul {
+  box-shadow: 2px 2px 15px 0 rgba(0,0,0, 0.5);
+}
+.dropDownMenu > li > ul {
+  text-align: left;
+  display: none;
+  background: green;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 240px;
+  z-index: 999999; /* if you have YouTube iframes, is good to have a bigger z-index so the video can appear above the video */
+}
+
+/* Level 3 */
+.dropDownMenu > li > ul > li > ul {
+  text-align: left;
+  display: none;
+  background: darkcyan;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 9999999;
+}
+/*CENTER*/
+.wrapper #center {
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.wrapper #center .left{
+  /*float:left;
+  margin-left:35px;*/
+  
+}
+
+.wrapper #center .mid .title_mid h4{
+  font-size:16.5px;
+  color: #214e4b;
+  font-weight:bold;
+}
+.wrapper #center .a {
+  
+  
+}
+.wrapper #center .mid .detail{
+  
+  
+}
+.wrapper #center .mid .img_mid img{
+  height:200px;
+}
+.wrapper #center .mid .other .title_other h4{
+  color:blue;
+  font-weight:bold;
+}
+.wrapper #center .mid .img_other {
+  height: 120px;
+    width: 120px;
+}
+.wrapper #center .mid .other .item_other {
+  /*float:left;
+  margin-right:10px;*/
+}
+
+.wrapper #center .mid .content_mid li {
+  margin-bottom:25px;
+}
+.wrapper #center .mid .content_mid ul {
+  padding-left:0px;
+}
+.wrapper #center .mid .content_mid .title {
+  font-weight:bold;
+  font-size:16px;
+  color:#337ab7;
+}
+.wrapper #center .mid .content_mid .des {
+  font-weight:bold;
+}
+.wrapper #center .mid .content_mid .item_ctm{
+  margin-bottom:10px;
+}
+/*css cho suggest*/
+.wrapper #center .mid .content_mid .item_ctm .bt_suggest select{
+  margin-bottom:10px;
+   width: 170px;
+}
+.wrapper #center .mid .content_mid .item_ctm .bt_suggest .btn{
+  /*float:right;*/
+}
+.wrapper #center .mid .content_mid .item_ctm .suggest ul li{
+  /*float:left;
+  margin-right:34px;*/
+  list-style-type: square;
+}
+.wrapper #center .mid .content_mid .item_ctm  .error_suggest{
+  color:red;
+  font-weight:bold;
+}
+.wrapper #center .mid .content_mid .item_ctm .suggest .title_suggest{
+  color:blue;
+  font-weight:bold;
+}
+.wrapper #center .mid .content_mid .item_ctm .suggest .cty_suggest a{
+  /*color:yellow;*/
+  
+}
+.wrapper #center .mid .content_mid .item_ctm .suggest .gia_suggest{
+  /*color:green;*/
+  
+}
+
+.wrapper #center .mid .img_hb{
+  
+}
+.wrapper #center .center2{
+  
+  /*margin-left:140px;*/
+}
+
+.wrapper #center .right{
+  /*float:left;
+  margin-left:35px;*/
+}
+.wrapper #center .right form button{
+  float:right;
+  height:31px;
+}
+.wrapper #center .right form input{
+  height:29px;
+  
+}
+.wrapper #center .panel-heading{
+  background:#dde8e4;
+}
+.wrapper #center .panel-heading h4{
+  text-align:center;
+  color:#385248;
+  font-weight:bold;
+}
+.wrapper #center .panel .panel-body ul{
+  padding-left:0px;
+  margin:0 10px;
+  
+}
+/*CHÌNH LẠI CÁC COL - LOẠI BỎ PADDING*/
+
+.make-md-column(2) {
+/* padding-left: 0;
+  padding-right: 0;*/
+}
+
+
+/*CSS ẢNH*/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  height:200px;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color:white;
+}
+.hovereffect h2 a{
+ text-decoration: none;
+  color:white;
+  font-weight:bold;
+}
+
+/*.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}*/
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+/*FOOTER*/
+.wrapper #footer{
+  min-height:250px;
+  background:#f8f8f8;
+}
+.wrapper #footer .content {
+  padding-top:30px;
+  margin-left:30px;
+  
+}
+.wrapper #footer .main_content .des{
+  float:left;
+  margin-right:20px;
+}
+/*MID FORM*/
+.mid label{
+  padding-top:7px;
+  /* padding-left: 22px; */
+}
+.mid .mid-form{
+  border: 1px solid #c2c2c2;
+    padding: 20px 30px;
+}
+/*REGISTER*/
+
+.mid .mid-form .title-form{
+  margin-top:0px;
+}
+
+.mid .form-control{
+  width: 70%;
+  margin-left: 15px;
+  font-size: 13px;
+  font-style: italic;
+}
+.mid .help-block{
+  color:red;
+  padding-left: 137px;
+  font-weight: bold;
+}
+.mid .btn{
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.mid .title-form{
+  text-align: center;
+  margin-bottom: 24px;
+    margin-top: 50px;
+}
+.mid .forgot input{
+  float:left;
+  margin-right: 7px;
+}
+.mid .forgot a{
+      margin-left: 83px;
+}
+.mid .forgot .col-md-6{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+/*LOGIN*/
+.mid .login-with .btn{
+  width: 73%;
+  font-size:15px;
+}
+.mid .login-with .col-md-4{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.mid .login-with .icon a{
+  display: inline-block;
+      width: 30px;
+    height: 30px;
+  background-size:28px; 
+}
+.mid .login-with .icon a:hover{
+      opacity: 0.7;
+}
+.mid .login-with .wrapper-icon{
+      display: inline-block;
+       margin-left: 28px;
+}
+.mid .login-with .icon .fb{
+  background: url(/Passion-News/app/assets/img/login/fb.png) no-repeat;
+  background-size:28px; 
+}
+
+.mid .login-with .icon .tw{
+  background: url(/Passion-News/app/assets/img/login/tw.png) no-repeat;
+background-size:28px; 
+}
+.mid .login-with .icon .g{
+  background: url(/Passion-News/app/assets/img/login/g.png) no-repeat;
+  background-size:28px; 
+}
+.mid .login-with .icon2 {
+  /*margin-right:7px;*/
+}
+.mid .login-with p{
+  text-align: center;
+}
+.mid .no-account{
+  margin-top:20px;
+}
+.mid .no-account p{
+  text-align: center;
+}
+.mid .no-account .btn{
+  width: 38%;
+    margin: 0px 125px;
+}
+/*USER PROFILE*/
+.user-profile{}
+.user-profile .btn-success{
+  width: 50%;
+  background-color: #72968f;
+    border-color: #668982;
+  
+}
+.btn-success:hover{
+  background-color: #5f807a;
+    border-color: #4c6661;
+}
+.user-profile h3 {
+    font-weight: 600;
+    /* text-align: center; */
+    padding-top: 10px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+}
+.user-profile .avatar-user{
+
+}
+.user-profile .profile-form{}
+.user-profile .profile-form .acount-setting{
+  border-bottom:1px solid #ebebeb;
+}
+.user-profile .profile-form .radio1{
+  float:left;
+  padding-right:32px;
+  margin-left: 15px;
+}
+.user-profile .profile-form .radio2{
+  float:left;
+}
+/*FORGOT PASSWORD*/
+.mid .forgotPass {}
+.mid .forgotPass .note{
+  margin-bottom: 30px;
+    font-size: 18px;
+}
+.mid .forgotPass .item{
+  padding-left:0px;
+  padding-right:0px;
+}
+.mid .forgotPass .button{
+  margin-top:44px;
+}
+.mid .forgotPass .button .send{
+   width: 38%;
+    float: left;
+    font-size: 16px;
+    padding: 9px 0;
+
+}
+.mid .forgotPass .button .cancel{
+      width: 26%;
+    font-size: 16px;
+    padding: 9px 0;
+    float: right;
+}
+
+/*Nút đăng kí đăng nhập ở thanh menu*/
+#header .login{
+  display: inline-block;
+  position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+#header .login a:hover{
+  text-decoration: underline;
+}
+.item{
+  margin-bottom: 10px;
+}
+/*Hiện thị tên người dùng trên thanh menu*/
+.UP .glyphicon-user{
+  color:white;
+  margin-right: 10px;
+}

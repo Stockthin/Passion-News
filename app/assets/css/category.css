@@ -1,0 +1,62 @@
+.business_catgnav li {
+    float: left;
+    display: block;
+    width: 100%;
+}
+.single_post_content > h2 {
+    background: none repeat scroll 0 0 #151515;
+    color: #fff;
+    font-family: 'Oswald',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-top: 5px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.fashion_technology_area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+.fashion {
+    float: left;
+    display: inline;
+    width: 48%;
+}
+.single_post_content {
+    float: left;
+    display: inline;
+    width: 100%;
+    margin-bottom: 20px;
+}
+h2 {
+    line-height: 23px;
+}
+.single_post_content > h2 span {
+    padding: 4px 10px;
+}
+.single_post_content > h2 span {
+    background: none repeat scroll 0 0 #d083cf;
+}
+.spost_nav .media-body > a {
+    font-family: "Oswald",sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.technology {
+    float: right;
+    display: inline;
+    width: 48%;
+}
+
+.bsbig_fig figcaption a:hover {
+    color: #d083cf;
+}
