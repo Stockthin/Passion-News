@@ -1281,7 +1281,7 @@ blockquote.bg-primary {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 10px;
-  
+  color: rgba(0, 0, 0, 0.6);
 }
 /* Joomla Menus */
 .menu li [class^="fa-"]:before,
