@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>comments</title>
+    </head>
+    <body>
+    <form>
+    <table>
+  
+    	<div class="cmt1">
+    	<p>
+<div class="fb-comments" data-href="<? echo $song_url; ?>" data-num-posts="2" data-width="10"></div>
+<!-- begin binh luan -->
+<div class="box w_4">
+<div
+$sql="SELECT COUNT(comment_id) AS soluong FROM tgt_nhac_comment WHERE comment_media_id='{$id_media}'";
+$result=mysql_query($sql);
+$commentCountInfo=mysql_fetch_assoc($result);
+mysql_free_result($result);
+$commentCount=$commentCountInfo['soluong'];
+?>
+Số người bình luận ( <?=$commentCount?> )
+</div>
+</div>
+<!-- end binh luan -->
+</tr>
+</p>
+    		<img src="h1.jpg" width=70px"> 
+
+    			<label for="comments" >Comments </label> <input type="text"  id="comments" name="comments" />
+				
+    	<input type="submit" name="post_comment" id="post_comment" value="Gửi" />
+
+			
+    	<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+   
+        <section class="comment-list">
+          <!-- First Comment -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                <img src ="h1.jpg" width="75px" />
+                <figcaption class="text-center">Nguyễn Nhi </figcaption>
+              </figure>
+            </div>
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow right">
+                <div class="panel-body">
+                  <header class="text-center">
+                    <div class="comment-user"><i class="fa fa-user"></i> Nguyễn Nhi </div>
+                    <time class="comment-date" datetime="16-08-2016 01:05"><i class="fa fa-clock-o"></i> Aug 16, 2016</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                    Đây là comment của tôi ! 
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-like"></i> like</a></p>
+                
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Second Comment Reply -->
+          <article class="row">
+            <div class="col-md-2 col-sm-2 col-md-offset-1 col-sm-offset-0 hidden-xs">
+              <figure class="thumbnail">
+                   <img src ="h2.jpg" width="75px" />
+                <figcaption class="text-center">Trần Kim</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-9 col-sm-9">
+              <div class="panel panel-default arrow left">
+               
+                <div class="panel-body">
+                  <header class="text-left">
+                    <div class="comment-user"><i class="fa fa-user"></i> Trần Kim</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                     Đây là comments của tôi !
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-like"></i> like</a></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Third Comment -->
+          <article class="row">
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow right">
+                <div class="panel-body">
+                  <header class="text-right">
+                    <div class="comment-user"><i class="fa fa-user"></i> Phạm Lê</div>
+                    <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                     Đây là comments của tôi ! 
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-like"></i> like</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                   <img src ="h2.jpg" width="75px" />
+                <figcaption class="text-center">Phạm Lê</figcaption>
+              </figure>
+            </div>
+          </article>
+       
+          
+          <!-- Fifth Comment -->
+          <article class="row">
+            <div class="col-md-10 col-sm-10">
+              <div class="panel panel-default arrow right">
+                <div class="panel-body">
+                  <header class="text-right">
+                    <div class="comment-user"><i class="fa fa-user"></i> Kim Trúc</div>
+                    <time class="comment-date" datetime="07-07-2015 01:05"><i class="fa fa-clock-o"></i> Jul 7, 2015</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                     Đây là comments của tôi !
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-like"></i> like</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <figure class="thumbnail">
+                   <img src ="h3.jpg" width="75px" />
+                <figcaption class="text-center">Kim Trúc</figcaption>
+              </figure>
+            </div>
+          </article>
+          <!-- Sixth Comment Reply -->
+          <article class="row">
+            <div class="col-md-9 col-sm-9 col-md-offset-1 col-md-pull-1 col-sm-offset-0">
+              <div class="panel panel-default arrow right">
+                
+                <div class="panel-body">
+                  <header class="text-right">
+                    <div class="comment-user"><i class="fa fa-user"></i> Nguyễn Khanh </div>
+                   
+                    <time class="comment-date" datetime="15-08-2016 01:05"><i class="fa fa-clock-o"></i> Aug 15, 2016</time>
+                  </header>
+                  <div class="comment-post">
+                    <p>
+                      Đây là comments của tôi ! 
+                    </p>
+                  </div>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-reply"></i> reply</a></p>
+                  <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-like"></i> like</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-md-pull-1 hidden-xs">
+              <figure class="thumbnail">
+                  <img src ="h1.jpg" width="75px" />
+                <figcaption class="text-center">Nguyễn Khanh</figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
+    </div>
+  </div>
+</div>
+
+    </div>
+    </table>
+    </form>
+    </body>
+</html>
