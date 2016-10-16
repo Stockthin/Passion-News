@@ -1,0 +1,168 @@
+<!--=== BEGIN CONTENT ===-->
+            <div id="content" ng-controller="UserProCtrl">
+                <div class="container background-white">
+                    <div class="container">
+                        <div class="row margin-vert-30 mid">
+                            <!-- User profile -->
+                            <div class=" mid mid-form col-md-6 col-md-offset-3 col-sm-offset-3">
+                               <h2 class="title-form">USER PROFILE</h2>
+                                <!-- <h3 >{{ registration.message }}</h3>  -->
+                                <form name="exampleForm" class="userProfile-form elegant-aero" ng-submit="submitForm()" novalidate>
+                                  <div class="avatar col-md-4">
+                                    <img ng-src="{{image}}" >
+                                    <button class="btn btn-primary" onclick="myFunctionImage()" >Edit</button>
+                                  </div>
+                                  <div class="infor col-md-8">
+                                    <!--USER NAME-->
+                                    <div>
+                                      <label class="col-md-3">Username</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-User">{{ username }}</p>
+                                        <input type="text" ng-model="username" hidden id="editUser"/>
+                                        <p class="icon-edit" onclick="myFunctionUser()" id="hide-icon1"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                     <!--NAME-->
+                                    <div>
+                                      <label class="col-md-3">Name</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Name">{{ name }}</p>
+                                        <input type="text" ng-model="name" hidden id="editName"/>
+                                        <p class="icon-edit" onclick="myFunctionName()" id="hide-icon2"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                     <!--ADRESS-->
+                                    <div>
+                                      <label class="col-md-3">Address</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Add">{{ address }}</p>
+                                        <input type="text" ng-model="address" hidden id="editAddress"/>
+                                        <p class="icon-edit" onclick="myFunctionAdd()" id="hide-icon3"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                      
+                                     <!--EMAIL-->
+                                    <div>
+                                      <label class="col-md-3">Email:</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor">{{ email }}</p>                                        
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                    <!--PHONE-->
+                                    <div>
+                                      <label class="col-md-3">Phone</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Phone">{{ phone }}</p>
+                                        <input type="text" ng-model="phone" hidden id="editPhone"/>
+                                        <p class="icon-edit" onclick="myFunctionPhone()" id="hide-icon4"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                    <!--DATERESTEE-->
+                                    <div>
+                                      <label class="col-md-3">DateRegister</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Date">{{ dateregistee }}</p>
+                                        <input type="text" ng-model="dateregistee" hidden id="editDateRegis"/>
+                                        <p class="icon-edit" onclick="myFunctionDateRegis()" id="hide-icon5"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                    <!--BIRTHDAY-->
+                                    <div>
+                                      <label class="col-md-3">Birthday</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Birth">{{ birthday }}</p>
+                                        <input type="text" ng-model="birthday" hidden id="editBirthday"/>
+                                        <p class="icon-edit" onclick="myFunctionBirthday()" id="hide-icon6"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                    <!--PASSWORD-->
+                                    <div>
+                                      <label class="col-md-3">Password</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Pass">{{password}}</p>
+                                        <input type="password" ng-model="password" hidden id="editPassword"/>
+                                        <p class="icon-edit" onclick="myFunctionPassword()" id="hide-icon7"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                    <!--Giới tính-->
+                                    <div>
+                                      <label class="col-md-3">Gender</label>
+                                      <div class="col-md-9 edit">
+                                        <p class="des-infor" id="edit-Gen">{{gender}}</p>
+                                        <input type="text" ng-model="gender" hidden id="editGender"/>
+                                        <p class="icon-edit" onclick="myFunctionGender()" id="hide-icon8"></p>
+                                        <div class="clr"></div>
+                                      </div>
+                                      <div class="clr"></div>
+                                    </div>
+                                  </div>
+                                  <div class="clr"></div>
+                                  <button class="update btn btn-primary" ng-click="submit">Update profile</button>
+                                </form>
+                                    
+                            </div>
+                            <!-- End Login Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function myFunctionUser() {
+                    $("#editUser").show();
+                    $("#edit-User").hide();
+                    $("#hide-icon1").hide();
+                    }
+                function myFunctionName() {
+                    $("#editName").show();
+                    $("#edit-Name").hide();
+                    $("#hide-icon2").hide();
+                    }
+                function myFunctionPhone() {
+                    $("#editPhone").show();
+                    $("#edit-Phone").hide();
+                    $("#hide-icon4").hide();
+                    }
+                function myFunctionAdd() {
+                    $("#editAddress").show();
+                    $("#edit-Add").hide();
+                    $("#hide-icon3").hide();
+                    }
+                function myFunctionDateRegis() {
+                    $("#editDateRegis").show();
+                    $("#edit-Date").hide();
+                    $("#hide-icon5").hide();
+                    }
+                function myFunctionBirthday() {
+                    $("#editBirthday").show();
+                    $("#edit-Birth").hide();
+                    $("#hide-icon6").hide();
+                    }
+                function myFunctionPassword() {
+                    $("#editPassword").show();
+                    $("#edit-Pass").hide();
+                    $("#hide-icon7").hide();
+                    }
+                function myFunctionGender() {
+                    $("#editGender").show();
+                    $("#edit-Gen").hide();
+                    $("#hide-icon8").hide();
+                    }
+               
+                
+            </script>
+            
