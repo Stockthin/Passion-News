@@ -1,0 +1,78 @@
+<!--=== BEGIN CONTENT ===-->
+            <div id="content" ng-controller="RegisterCtrl as register">
+                <div class="container background-white">
+                    <div class="container">
+                        <div class="row margin-vert-30 mid">
+                            <!-- Login Box -->
+                            <div class="  mid-form col-md-6 col-md-offset-3 col-sm-offset-3">
+                                <h2 class="title-form">REGISTER</h2>
+                                <form name="exampleForm" class="elegant-aero" ng-submit="submitForm()" novalidate>
+                                    <!--NAME-->
+                                    <div class="item">
+                                      <label class="col-md-3">Name:</label>
+                                      <input class="col-md-9 form-control" type="text" name="userFirstName" ng-model="name" required />
+                                      <div class="clr"></div>
+                                      <div ng-messages="exampleForm.userFirstName.$error" class="help-block" >
+                                        <div ng-message="required">This field is required</div>
+                                      </div>
+                                    </div>
+                                   
+                                    <!--USER NAME-->
+                                    <div class="item">
+                                      <label class="col-md-3">User Name:</label>
+                                      <input class="col-md-9 form-control" type="text" name="userName" ng-model="userName" ng-minlength="6" required />
+                                      <div class="clr"></div>
+                                      <div ng-messages="exampleForm.userName.$error" class="help-block" >
+                                        <div ng-message="required">This field is required</div>
+                                        <div ng-message="minlength">username must be over 6 characters</div>
+                                      </div>
+                                    </div>
+                                      
+                                    <!--EMAIL ADDRESS-->
+                                    <div class="item">
+                                      <label class="col-md-3">Email Address:</label>
+                                      <input class="col-md-9 form-control" type="email" name="email" ng-model="email" required />
+                                      <div class="clr"></div>
+                                       <div ng-messages="exampleForm.email.$error" class="help-block">
+                                        <div ng-message="required">This field is required</div>
+                                        <div ng-message="email">Your email address is invalid</div>
+                                      </div>
+                                    </div>
+                                      
+                                    <!--PASSWORD-->
+                                    <div class="item">
+                                      <label class="col-md-3">Password: </label>
+                                      <input class="col-md-9 form-control" type="password" name="password" ng-model="password" ng-minlength="6"
+                                         ng-maxlength="15" required />
+                                      <div class="clr"></div>
+                                      <div ng-messages="exampleForm.password.$error" class="help-block">
+                                        <div ng-message="required">This field is required</div>
+                                        <div ng-message="minlength">password must be over 6 characters</div>
+                                        <div ng-message="maxlength">password must not exceed 15 characters</div>
+                                      </div>
+                                    </div>  
+                                      
+                                    <!--CONFIRM PASSWORD-->
+                                    <div class="item">
+                                      <label class="col-md-3">Confirm Password:</label>
+                                      <input class="col-md-9 form-control" type="password" name="confirmPassword" ng-model="confirmPassword"  required compare-to="password"/>
+                                      <div class="clr"></div>
+                                      <div ng-messages="exampleForm.confirmPassword.$error" class="help-block">
+                                        <div ng-message="required">This field is required</div>
+                                        <div ng-message="compareTo">Must match the previous entry</div>
+                                      </div>
+                                    </div>
+                                    
+                                    <!--SUBMIT-->
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary"  ng-disabled="exampleForm.$invalid" >Submit</button>
+                                    </div>
+                                  </form>
+                                    
+                            </div>
+                            <!-- End Login Box -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT ===>
